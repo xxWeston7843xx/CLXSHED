@@ -136,7 +136,7 @@ end)
    end,
 })
 
- local MovementTab = Window:CreateTab("Movement", 4483362458) -- Title, Image
+local MovementTab = Window:CreateTab("Movement", 4483362458) -- Title, Image
 
  local Button = MovementTab:CreateButton({
     Name = "Fly (R)",
@@ -230,7 +230,7 @@ end)
     Increment = 1,
     Suffix = "Speed",
     CurrentValue = 16,
-    Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+    Flag = "wsSlider", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
     Callback = function(Value)
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
     end,
@@ -242,7 +242,7 @@ end)
     Increment = 1,
     Suffix = "Power",
     CurrentValue = 50,
-    Flag = "Slider2", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+    Flag = "jpSlider", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
     Callback = function(Value)
         game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
     end,
